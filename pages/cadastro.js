@@ -40,7 +40,7 @@ export default function CadastroPage() {
             if (response.status !== 201) throw new Error(json)
 
             setCookie('authorization' , json)
-            router.push('/')
+            router.push('/login')
 
         } catch (error) {
             setError(error.message)
